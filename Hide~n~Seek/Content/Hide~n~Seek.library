@@ -1,0 +1,7 @@
+ContentLibrary = 
+{
+	string Name = "Hide~n~Seek",
+	uint64 LibraryId = 561d5e49efa841a6,
+	string SourceControlType = "",
+	bool ReadOnly = false,
+},
