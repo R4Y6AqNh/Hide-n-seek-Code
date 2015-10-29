@@ -6,7 +6,7 @@ Cog =
 		string ProjectOwner = "",
 		string DefaultLevel = "Level",
 		string ProjectSpace = "Space",
-		string ProjectFolder = "H:\horror game\Hide~n~Seek",
+		string ProjectFolder = "H:\My Documents\GitHub\Hide-n-seek-Code\Hide~n~Seek",
 		uint ProjectEngineRevision = 12385,
 		bool AutoTakeProjectScreenshot = true,
 	},

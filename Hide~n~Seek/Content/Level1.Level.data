@@ -115,7 +115,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 100,
+			float Size = 6.08100891,
 		},
 		EditorCameraController = 
 		{
@@ -3939,7 +3939,7 @@ Level =
 		},
 		PlayerMovement = 
 		{
-			float Speed = 0.200000003,
+			float Speed = 0.400000006,
 		},
 	},
 	Cog = 
