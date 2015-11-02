@@ -1,0 +1,27 @@
+ImageContent = 
+{
+	ContentTags = 
+	{
+		Array Tags = 
+		[
+			"VG1_SpritesAndText",
+		],
+	},
+	SpriteSourceBuilder = 
+	{
+		string Name = "brickWalltileable",
+		uint64 ResourceId = 55c6a0a56e470dc2,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833332986,
+		float OriginX = 256,
+		float OriginY = 256,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

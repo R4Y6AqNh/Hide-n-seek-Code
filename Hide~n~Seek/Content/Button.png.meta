@@ -1,0 +1,27 @@
+ImageContent = 
+{
+	ContentTags = 
+	{
+		Array Tags = 
+		[
+			"VG1_SpritesAndText",
+		],
+	},
+	SpriteSourceBuilder = 
+	{
+		string Name = "Button",
+		uint64 ResourceId = 533b80676eb35293,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 45,
+		uint FrameSizeY = 45,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833332986,
+		float OriginX = 22,
+		float OriginY = 22,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [5, 5, 5, 5],
+		SpriteFill Fill = NineSlice,
+	},
+},

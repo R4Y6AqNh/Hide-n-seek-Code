@@ -2,7 +2,7 @@ DataContent =
 {
 	DataBuilder = 
 	{
-		string Name = "BlackScreen",
+		string Name = "StartScreen",
 		uint64 ResourceId = 561bee414b64a7f9,
 		string LoaderType = "Level",
 		uint Version = 0,
