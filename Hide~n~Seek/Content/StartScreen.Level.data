@@ -99,82 +99,6 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "BasicParticleEffect",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [0, 0, 0],
-			Vec3 Scale = [150, 150, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteParticleSystem = 
-		{
-			bool Visible = true,
-			bool VisibilityCulling = true,
-			bool VisibilityEvents = true,
-			bool CastShadows = false,
-			SystemChildMode ChildMode = Independent,
-			SystemSpace SystemSpace = WorldSpace,
-			uint DrawOrder = 0,
-			float WarmUpTime = 0,
-			ParticleGeometry GeometryMode = Billboarded,
-			ParticleRenderMode RenderMode = Additive,
-			ParticleSortMode SortMode = Youngest,
-			ParticleAnimation ParticleAnimation = Single,
-			string Texture = "559dbaea34c84798:FastSpark",
-			Vec4 Tint = [0.995000005, 0.532325029, 0.532325029, 1],
-			float VelocityScale = 1,
-			float LengthScale = 1,
-			float MaxParticleSize = 100,
-			Vec3 SystemSize = [200, 200, 1],
-		},
-		SphericalParticleEmitter = 
-		{
-			bool Active = true,
-			uint EmitCount = 0,
-			float EmitRate = 100,
-			float EmitVariance = 0,
-			float Size = 1,
-			float SizeVariance = 0.5,
-			float Lifetime = 1,
-			float LifetimeVariance = 0.200000003,
-			float Spin = 0,
-			float SpinVariance = 0,
-			bool RandomSpin = true,
-			float Fill = 1,
-			float EmitterVelocityPercent = 0,
-			Vec3 StartVelocity = [1, -1, 0],
-			Vec3 RandomVelocity = [0, 1, 2],
-			Vec3 TangentVelocity = [0, 0, 0],
-			Vec3 EmitterSize = [0, 0, 0],
-			bool FastMovingEmitter = false,
-		},
-		LinearParticleAnimator = 
-		{
-			Vec3 Force = [0, 0, 0],
-			Vec3 RandomForce = [0, 0, 0],
-			float Torque = 0,
-			float Growth = 0,
-			float Dampening = 0,
-			Vec3 Twist = [0, 0, 0],
-		},
-		ParticleColorAnimator = 
-		{
-			Vec4 Color0 = [0.860000014, 0.5977, 0.5977, 1],
-			Vec4 Color1 = [0.855000019, 0.602775037, 0.602775037, 1],
-			Vec4 Color2 = [0.639999986, 0.483199984, 0.483199984, 1],
-			Vec4 Color3 = [0.964999974, 0.723749995, 0.723749995, 1],
-			Vec4 Color4 = [0.550000012, 0.376749992, 0.376749992, 0],
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 4,
-		},
-		Named = 
-		{
 			string Name = "EditorCamera",
 		},
 		Transform = 
@@ -191,7 +115,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 18.2683659,
+			float Size = 49.6585655,
 		},
 		EditorCameraController = 
 		{
@@ -246,7 +170,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 5,
+			uint Id = 4,
 		},
 		Named = 
 		{
@@ -255,7 +179,7 @@ Level =
 		Transform = 
 		{
 			Vec3 Translation = [0, 0, -4],
-			Vec3 Scale = [150, 150, 1],
+			Vec3 Scale = [177.127594, 150, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Sprite = 
@@ -281,7 +205,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 6,
+			uint Id = 5,
 		},
 		Named = 
 		{
@@ -306,6 +230,142 @@ Level =
 			string FontName = "4e7bac697bec55c5:Verdana",
 			uint FontSize = 40,
 			string Text = "Hide & Seek",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "BasicParticleEffect",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 35, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			float WarmUpTime = 0,
+			ParticleGeometry GeometryMode = Beam,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = Youngest,
+			ParticleAnimation ParticleAnimation = Single,
+			string Texture = "559dbaea34c84798:FastSpark",
+			Vec4 Tint = [0.725000024, 0, 0, 1],
+			float VelocityScale = 0.5,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [50, 50, 4],
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		BoxParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 2000,
+			float EmitVariance = 0,
+			float Size = 0.300000012,
+			float SizeVariance = 0.100000001,
+			float Lifetime = 0.600000024,
+			float LifetimeVariance = 0,
+			float Spin = 0,
+			float SpinVariance = 50,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [10, -100, 0],
+			Vec3 RandomVelocity = [0, 0, 0],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [100, 50, 0],
+			bool FastMovingEmitter = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Play",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.20374966e-007, 5.48857641, 0],
+			Vec3 Scale = [11.1687946, 7.29344988, 1.52271926],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.525490224, 0.011764707, 0.011764707, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 40,
+			string Text = "Play",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Leave",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.20374966e-007, -4.23404741, 0],
+			Vec3 Scale = [11.1687946, 7.29344988, 1.52271926],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.525490224, 0.011764707, 0.011764707, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 40,
+			string Text = "Leave",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,

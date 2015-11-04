@@ -178,8 +178,8 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 0],
-			Vec3 Scale = [277.936218, 150, 1],
+			Vec3 Translation = [0, 0, -4],
+			Vec3 Scale = [177.127594, 150, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Sprite = 
@@ -213,8 +213,8 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 18.5043488, 0],
-			Vec3 Scale = [24.6001301, 19.7681904, 1],
+			Vec3 Translation = [0, 21.7974949, 1],
+			Vec3 Scale = [10.5094118, 11.1081972, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		SpriteText = 
@@ -223,13 +223,13 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 1],
+			Vec4 Color = [0.524999976, 0.0105000138, 0.0105000138, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string FontName = "4e7bac697bec55c5:Verdana",
-			uint FontSize = 50,
-			string Text = "play",
+			uint FontSize = 40,
+			string Text = "Hide & Seek",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
