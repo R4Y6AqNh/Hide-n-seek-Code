@@ -115,7 +115,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 100,
+			float Size = 13.5335484,
 		},
 		EditorCameraController = 
 		{
@@ -159,7 +159,7 @@ Level =
 			float FieldOfView = 44,
 			float NearPlane = 10,
 			float FarPlane = 200,
-			float Size = 30,
+			float Size = 20,
 		},
 		SoundListener = 
 		{
@@ -3953,6 +3953,9 @@ Level =
 			bool StartPlaying = true,
 			string CueName = "562465c87b2506d7:song",
 		},
+		PlayerDeath = 
+		{
+		},
 		Hierarchy = 
 		{
 			Cog = 
@@ -3963,12 +3966,17 @@ Level =
 				},
 				Named = 
 				{
-					string Name = "viewpoint",
+					string Name = "Sprite",
+				},
+				EditorFlags = 
+				{
+					bool Locked = false,
+					bool Hidden = true,
 				},
 				Transform = 
 				{
-					Vec3 Translation = [0, 0, -1],
-					Vec3 Scale = [7.26772451, 7.26772451, 10.9015865],
+					Vec3 Translation = [-2.52631545, 1.75438535, 9.5],
+					Vec3 Scale = [3.69529629, 3.69529629, 5.54294443],
 					Quat Rotation = [0, 0, 0, 1],
 				},
 				Sprite = 
@@ -3977,11 +3985,11 @@ Level =
 					bool VisibilityCulling = true,
 					bool VisibilityEvents = true,
 					bool CastShadows = false,
-					Vec4 Color = [0.125490203, 0.125490203, 0.125490203, 0.715000033],
+					Vec4 Color = [1, 1, 1, 1],
 					BlendMode BlendMode = Alpha,
 					SpriteGeometryMode GeometryMode = ZPlane,
 					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-					string SpriteSource = "5274db4c2e7c11f9:Circle",
+					string SpriteSource = "5657305f04c8d16c:blackbox",
 					bool RenderMask = false,
 					bool FlipX = false,
 					bool FlipY = false,
@@ -4228,17 +4236,12 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "backround",
-		},
-		EditorFlags = 
-		{
-			bool Locked = false,
-			bool Hidden = true,
+			string Name = "Enemy",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0.0945115089, -4],
-			Vec3 Scale = [181.487808, 185.233795, 181.487808],
+			Vec3 Translation = [-46.421051, 47.3684235, -1.5],
+			Vec3 Scale = [1.5, 1.5, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Sprite = 
@@ -4247,17 +4250,69 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [0, 0, 0, 1],
+			Vec4 Color = [1, 1, 1, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "5275aa4d802dd6dc:Square",
+			string SpriteSource = "562b3b3515d1eef7:ghostwalk1",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "562b3acc3d78804a:enemy",
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		EnemyChase = 
+		{
+			float PaceSpeed = 5,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Player",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 69,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Hierarchy = 
+		{
 		},
 	},
 },

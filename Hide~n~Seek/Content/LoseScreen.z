@@ -1,4 +1,4 @@
-class MouseMovement : ZilchComponent
+class LoseScreen : ZilchComponent
 {
     var Play : Boolean = false;
     function Initialize(init : CogInitializer)
@@ -21,14 +21,14 @@ class MouseMovement : ZilchComponent
     }
     function OnCollitionStarted(event : CollisionEvent)
     {
-        if(event.OtherObject.Name == "Play")
+        if(event.OtherObject.Name == "Play Again?")
         {
             this.Play = true;
         }
     }
     function OnCollitionEnded(event : CollisionEvent)
     {
-        if(event.OtherObject.Name == "Play")
+        if(event.OtherObject.Name == "Play Again?")
         {
             this.Play = false;
         }

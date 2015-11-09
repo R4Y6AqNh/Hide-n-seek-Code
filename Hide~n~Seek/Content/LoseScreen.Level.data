@@ -229,7 +229,7 @@ Level =
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string FontName = "4e7bac697bec55c5:Verdana",
 			uint FontSize = 40,
-			string Text = "Hide & Seek",
+			string Text = "You Lose",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
@@ -311,7 +311,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Play",
+			string Name = "Play Again?",
 		},
 		Transform = 
 		{
@@ -331,7 +331,7 @@ Level =
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string FontName = "4e7bac697bec55c5:Verdana",
 			uint FontSize = 40,
-			string Text = "Play",
+			string Text = "Play Again?",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
@@ -449,9 +449,6 @@ Level =
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 		},
-		MouseMovement = 
-		{
-		},
 		RigidBody = 
 		{
 			bool Static = false,
@@ -473,6 +470,9 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		LoseScreen = 
+		{
 		},
 	},
 },

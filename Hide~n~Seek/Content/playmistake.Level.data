@@ -235,5 +235,8 @@ Level =
 			float AnimationSpeed = 0.800000012,
 			uint StartFrame = 0,
 		},
+		Animationskip = 
+		{
+		},
 	},
 },

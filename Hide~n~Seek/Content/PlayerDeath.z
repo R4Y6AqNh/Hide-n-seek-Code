@@ -1,4 +1,4 @@
-class MouseMovement : ZilchComponent
+class PlayerDeath : ZilchComponent
 {
     var Play : Boolean = false;
     function Initialize(init : CogInitializer)
@@ -10,25 +10,21 @@ class MouseMovement : ZilchComponent
 
     function OnLogicUpdate(event : UpdateEvent)
     {
-        var screenPos = Zero.Mouse.ScreenPosition;
-        var mousePos = this.LevelSettings.CameraViewport.ScreenToWorldZPlane(screenPos, 0.0);
-        this.Owner.Transform.Translation = mousePos;
-        Console.WriteLine(this.Play);
-        if(Zero.Mouse.IsButtonDown(MouseButtons.Left) && this.Play == true)
+        if(this.Play == true)
         {
-            this.Space.LoadLevel(Level.Find("playmistake"));
+            this.Space.LoadLevel(Level.Find("LoseScreen"));
         }
     }
     function OnCollitionStarted(event : CollisionEvent)
     {
-        if(event.OtherObject.Name == "Play")
+        if(event.OtherObject.Name == "Enemy")
         {
             this.Play = true;
         }
     }
     function OnCollitionEnded(event : CollisionEvent)
     {
-        if(event.OtherObject.Name == "Play")
+        if(event.OtherObject.Name == "Enemy")
         {
             this.Play = false;
         }
