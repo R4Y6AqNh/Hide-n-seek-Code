@@ -72,5 +72,13 @@ class EnemyChase : ZilchComponent
     {
         this.Owner.Sprite.Color = this.ChaseColor;
         this.Owner.Transform.Translation += this.ChaseDirection * event.Dt * this.ChaseSpeed;
+        if(this.ChaseDirection.X < 0)
+        {
+            this.Owner.Sprite.FlipX = true;
+        }    
+        if(this.ChaseDirection.X > 0)
+        {
+            this.Owner.Sprite.FlipX = false;
+        }
     }
 }
