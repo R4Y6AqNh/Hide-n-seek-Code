@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "PersonFollow",
+		uint64 ResourceId = 565df137f38b6aed,
+	},
+},
