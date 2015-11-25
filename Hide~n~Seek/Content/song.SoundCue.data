@@ -13,7 +13,7 @@ SoundCue =
 	Array Sounds = 
 	[
 		{
-			string SoundName = "56421e437a611fc5:LizzHide and Seek  ENGLISHv2",
+			string SoundName = "564217c6e6e6842e:LizzHide and Seek  ENGLISHv3",
 			string GeneratedSoundName = "55017c595ef88bf0:DefaultGeneratedSound",
 			WhichSoundType WhichToUse = FromFile,
 			float Weight = 1,
@@ -29,6 +29,6 @@ SoundCue =
 	],
 	string RolloffCurveName = "",
 	int Version = 1,
-	RolloffCurveType RolloffCurveType = Sine,
+	RolloffCurveType RolloffCurveType = Linear,
 	uint LogCurveSteepnessFactor = 123668032,
 },

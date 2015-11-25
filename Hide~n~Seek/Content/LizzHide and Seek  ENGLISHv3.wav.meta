@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "LizzHide and Seek  ENGLISHv3",
+		uint64 ResourceId = 564217c6e6e6842e,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Decompress,
+	},
+},

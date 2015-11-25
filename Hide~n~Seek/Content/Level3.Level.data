@@ -242,7 +242,7 @@ Level =
 		SoundEmitter = 
 		{
 			float Volume = 1,
-			float Pitch = -4,
+			float Pitch = 0,
 			bool Positional = true,
 			int Version = 1,
 		},
