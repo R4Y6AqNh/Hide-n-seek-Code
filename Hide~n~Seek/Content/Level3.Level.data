@@ -90,6 +90,9 @@ Level =
 			int HilightInterval = 10,
 			bool FollowEditorCamera = false,
 		},
+		Leveltime = 
+		{
+		},
 	},
 	Cog = 
 	{
