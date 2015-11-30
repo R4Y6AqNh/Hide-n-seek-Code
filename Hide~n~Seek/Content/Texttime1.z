@@ -1,4 +1,4 @@
-class Leveltime : ZilchComponent
+class Texttime1 : ZilchComponent
 {
     var Timer : Real = 0.0;
     function Initialize(init : CogInitializer)
@@ -9,9 +9,9 @@ class Leveltime : ZilchComponent
     function OnLogicUpdate(event : UpdateEvent)
     {
         this.Timer += event.Dt;
-        if(this.Timer >=138)
+        if(this.Timer >=4)
         {
-            this.Space.LoadLevel(Level.Find("Level2"));
+            this.Space.LoadLevel(Level.Find("playmistake"));
         }
     }
 }

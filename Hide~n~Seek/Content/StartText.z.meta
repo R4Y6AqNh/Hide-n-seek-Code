@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "StartText",
+		uint64 ResourceId = 564b6fb15a3e0a70,
+	},
+},

@@ -16,7 +16,7 @@ class LoseScreen : ZilchComponent
         Console.WriteLine(this.Play);
         if(Zero.Mouse.IsButtonDown(MouseButtons.Left) && this.Play == true)
         {
-            this.Space.LoadLevel(Level.Find("playmistake"));
+            this.Space.LoadLevel(Level.Find("starttext"));
         }
     }
     function OnCollitionStarted(event : CollisionEvent)

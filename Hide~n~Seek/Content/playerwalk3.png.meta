@@ -2,15 +2,15 @@ ImageContent =
 {
 	SpriteSourceBuilder = 
 	{
-		string Name = "waterdropaniv2",
-		uint64 ResourceId = 564b62258b099202,
+		string Name = "playerwalk3",
+		uint64 ResourceId = 564b67132e061b2e,
 		uint64 AtlasId = 5274cf95e4a661fd,
-		uint FrameSizeX = 598,
-		uint FrameSizeY = 429,
-		uint FrameCount = 18,
+		uint FrameSizeX = 200,
+		uint FrameSizeY = 200,
+		uint FrameCount = 1,
 		float FrameDelay = 0.0833333358,
-		float OriginX = 299,
-		float OriginY = 214,
+		float OriginX = 100,
+		float OriginY = 100,
 		float PixelsPerUnit = 64,
 		bool Smoothing = false,
 		bool Looping = true,

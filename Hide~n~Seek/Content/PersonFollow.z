@@ -10,7 +10,7 @@ class PersonFollow : ZilchComponent
     
     [Property]
     var TargetObject: CogPath = null;
-    var ChaseTriggerDistance: Real = 100.0;
+    var ChaseTriggerDistance: Real = 50.0;
     var DistanceFromTarget: Real = 0.0;
     var ChaseDirection: Real3 = Real3();
     var TargetWithinRange: Boolean = false;

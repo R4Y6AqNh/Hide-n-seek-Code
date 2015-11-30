@@ -90,6 +90,9 @@ Level =
 			int HilightInterval = 10,
 			bool FollowEditorCamera = false,
 		},
+		Texttime1 = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -148,7 +151,7 @@ Level =
 		Transform = 
 		{
 			Vec3 Translation = [0, 0.574994087, 40],
-			Vec3 Scale = [1.5374254, 1, 1],
+			Vec3 Scale = [1.41919339, 0.876151025, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Camera = 
@@ -159,7 +162,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 200,
-			float Size = 18.5,
+			float Size = 10,
 		},
 		SoundListener = 
 		{
@@ -209,33 +212,32 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Sprite",
+			string Name = "SpriteText",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 0],
-			Vec3 Scale = [3.09088349, 3.09088349, 3.09088349],
+			Vec3 Translation = [0, 0.679536819, 2],
+			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Sprite = 
+		SpriteText = 
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 1],
+			Vec4 Color = [0.544999957, 0.0245249867, 0.0245249867, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "5644b117099293d7:waterdropaniv2",
-			bool RenderMask = false,
-			bool FlipX = false,
-			bool FlipY = false,
-			bool AnimationActive = true,
-			float AnimationSpeed = 0.800000012,
-			uint StartFrame = 0,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 60,
+			string Text = "",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
 		},
-		Animationskip = 
+		StartText = 
 		{
 		},
 	},
