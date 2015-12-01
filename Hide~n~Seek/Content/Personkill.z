@@ -1,0 +1,25 @@
+class Personkill : ZilchComponent
+{
+   var Death : Integer = 2;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionUpdate);
+    }
+
+    function OnCollisionUpdate(event : CollisionEvent)
+    {
+        Console.WriteLine("plz");
+        if(Zero.Keyboard.KeyIsDown(Keys.Space) && event.OtherObject.Name == "Player")
+        {
+            this.Death -= 1;
+        }
+        Console.WriteLine(this.Death);
+        if(this.Death <= 0)
+        {
+            this.Owner.PersonFollow.PaceSpeed = 0;
+            this.Owner.PersonFollow.ChaseSpeed = 0;
+            this.Owner.MultiConvexMeshCollider.Ghost = true;
+        }
+        this.Owner.Sprite.CurrentFrame = 2 - this.Death;
+    }
+}

@@ -106,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 90],
+			Vec3 Translation = [-7.15789413, 5.15789795, 50.75],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -118,7 +118,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 100,
+			float Size = 90.483757,
 		},
 		EditorCameraController = 
 		{
@@ -126,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0, 0, 40],
+			Vec3 LookTarget = [-7.15789413, 5.15789795, 0.75],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -202,7 +202,7 @@ Level =
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			bool AnimationActive = true,
+			bool AnimationActive = false,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 		},
@@ -634,13 +634,13 @@ Level =
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "565df18cde85d21a:personstand",
+			string SpriteSource = "564a3f8e3707c970:personani",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			bool AnimationActive = true,
+			bool AnimationActive = false,
 			float AnimationSpeed = 1,
-			uint StartFrame = 0,
+			uint StartFrame = 1,
 		},
 		RigidBody = 
 		{
@@ -690,6 +690,9 @@ Level =
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
 			},
+		},
+		Personkill = 
+		{
 		},
 		Hierarchy = 
 		{
