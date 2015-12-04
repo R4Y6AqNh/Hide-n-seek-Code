@@ -8,18 +8,20 @@ class Personkill : ZilchComponent
 
     function OnCollisionUpdate(event : CollisionEvent)
     {
-        Console.WriteLine("plz");
+        //Console.WriteLine("plz");
         if(Zero.Keyboard.KeyIsDown(Keys.Space) && event.OtherObject.Name == "Player")
         {
             this.Death -= 1;
+            this.Owner.Sprite.CurrentFrame = 2 - this.Death;
         }
-        Console.WriteLine(this.Death);
+        //Console.WriteLine(this.Death);
         if(this.Death <= 0)
         {
-            this.Owner.PersonFollow.PaceSpeed = 0;
-            this.Owner.PersonFollow.ChaseSpeed = 0;
+            this.Owner.RigidBody.DynamicState = RigidBodyDynamicState.Static;
             this.Owner.MultiConvexMeshCollider.Ghost = true;
+            this.Owner.PersonFollow.Dead = true;
+            Console.WriteLine("hello");
         }
-        this.Owner.Sprite.CurrentFrame = 2 - this.Death;
+
     }
 }

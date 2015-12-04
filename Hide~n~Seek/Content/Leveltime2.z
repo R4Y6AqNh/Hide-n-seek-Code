@@ -1,0 +1,17 @@
+class Leveltime2 : ZilchComponent
+{
+    var Timer : Real = 0.0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Timer += event.Dt;
+        if(this.Timer >=138)
+        {
+            this.Space.LoadLevel(Level.Find("Level1"));
+        }
+    }
+}

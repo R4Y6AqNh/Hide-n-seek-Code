@@ -7,6 +7,7 @@ class PersonFollow : ZilchComponent
     var MaxMoveDistance: Real = 10.0;
     var PaceDirection: Real3 = Real3(0.0, 1.0, 0.0);
     var StartPosition: Real3 = Real3();
+    [Property] var Dead : Boolean = false;
     
     [Property]
     var TargetObject: CogPath = null;
@@ -29,7 +30,9 @@ class PersonFollow : ZilchComponent
     function OnLogicUpdate(event : UpdateEvent)
     {
         this.TargetWithinRange = false;
-        if (this.TargetObject.Cog != null)
+        Console.WriteLine(this.Owner.PersonFollow.PaceSpeed);
+        Console.WriteLine(this.Owner.PersonFollow.ChaseSpeed);
+        if (this.TargetObject.Cog != null && this.Dead == false )
         {
             this.CalculateChaseDirection();
             this.TargetWithinRange = (this.DistanceFromTarget <= this.ChaseTriggerDistance);
@@ -42,7 +45,7 @@ class PersonFollow : ZilchComponent
                 this.PaceBackAndForth(event);
             }
         }
-        else
+        else if (this.Dead == false )
         {
         this.PaceBackAndForth(event);
         }
