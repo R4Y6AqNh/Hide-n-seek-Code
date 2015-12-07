@@ -11,7 +11,7 @@ class Leveltime : ZilchComponent
         this.Timer += event.Dt;
         if(this.Timer >=138)
         {
-            this.Space.LoadLevel(Level.Find("Level2"));
+            this.Space.LoadLevel(Level.Find("killtext"));
         }
     }
 }

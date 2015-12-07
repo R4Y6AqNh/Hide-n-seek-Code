@@ -90,6 +90,9 @@ Level =
 			int HilightInterval = 10,
 			bool FollowEditorCamera = false,
 		},
+		Texttime2 = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -103,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 90],
+			Vec3 Translation = [0, 0.574994087, 90],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -123,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0, 0, 40],
+			Vec3 LookTarget = [0, 0.574994087, 40],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -147,8 +150,8 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 40],
-			Vec3 Scale = [1, 1, 1],
+			Vec3 Translation = [0, -0.853540897, 40],
+			Vec3 Scale = [1.41919339, 0.876151025, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Camera = 
@@ -159,7 +162,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 200,
-			float Size = 50,
+			float Size = 10,
 		},
 		SoundListener = 
 		{
@@ -178,8 +181,8 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, -4],
-			Vec3 Scale = [177.127594, 150, 1],
+			Vec3 Translation = [0, 0, -49.9994354],
+			Vec3 Scale = [547.480774, 463.632538, 3.09088349],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Sprite = 
@@ -213,8 +216,8 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 21.7974949, 1],
-			Vec3 Scale = [10.5094118, 11.1081972, 1],
+			Vec3 Translation = [0, 1.15571356, 2],
+			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		SpriteText = 
@@ -223,16 +226,19 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [0.524999976, 0.0105000138, 0.0105000138, 1],
+			Vec4 Color = [0.544999957, 0.0245249867, 0.0245249867, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string FontName = "4e7bac697bec55c5:Verdana",
-			uint FontSize = 40,
-			string Text = "You Lose",
+			uint FontSize = 60,
+			string Text = "",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
+		},
+		Killtext = 
+		{
 		},
 	},
 	Cog = 
@@ -243,80 +249,12 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "BasicParticleEffect",
+			string Name = "SpriteText",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 35, 0],
+			Vec3 Translation = [0, -1.15715313, 2],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteParticleSystem = 
-		{
-			bool Visible = true,
-			bool VisibilityCulling = true,
-			bool VisibilityEvents = true,
-			bool CastShadows = false,
-			SystemChildMode ChildMode = Independent,
-			SystemSpace SystemSpace = WorldSpace,
-			uint DrawOrder = 0,
-			float WarmUpTime = 0,
-			ParticleGeometry GeometryMode = Beam,
-			ParticleRenderMode RenderMode = Additive,
-			ParticleSortMode SortMode = Youngest,
-			ParticleAnimation ParticleAnimation = Single,
-			string Texture = "559dbaea34c84798:FastSpark",
-			Vec4 Tint = [0.725000024, 0, 0, 1],
-			float VelocityScale = 0.5,
-			float LengthScale = 1,
-			float MaxParticleSize = 100,
-			Vec3 SystemSize = [50, 50, 4],
-		},
-		LinearParticleAnimator = 
-		{
-			Vec3 Force = [0, 0, 0],
-			Vec3 RandomForce = [0, 0, 0],
-			float Torque = 0,
-			float Growth = 0,
-			float Dampening = 0,
-			Vec3 Twist = [0, 0, 0],
-		},
-		BoxParticleEmitter = 
-		{
-			bool Active = true,
-			uint EmitCount = 0,
-			float EmitRate = 2000,
-			float EmitVariance = 0,
-			float Size = 0.300000012,
-			float SizeVariance = 0.100000001,
-			float Lifetime = 0.600000024,
-			float LifetimeVariance = 0,
-			float Spin = 0,
-			float SpinVariance = 50,
-			bool RandomSpin = true,
-			float Fill = 1,
-			float EmitterVelocityPercent = 0,
-			Vec3 StartVelocity = [10, -100, 0],
-			Vec3 RandomVelocity = [0, 0, 0],
-			Vec3 TangentVelocity = [0, 0, 0],
-			Vec3 EmitterSize = [100, 50, 0],
-			bool FastMovingEmitter = false,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 7,
-		},
-		Named = 
-		{
-			string Name = "Play Again?",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-3.20374966e-007, -7.81003523, 0],
-			Vec3 Scale = [11.1687946, 7.0765028, 1.52271926],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		SpriteText = 
@@ -325,97 +263,18 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [0.525490224, 0.011764707, 0.011764707, 1],
+			Vec4 Color = [0.544999957, 0.0245249867, 0.0245249867, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string FontName = "4e7bac697bec55c5:Verdana",
-			uint FontSize = 40,
-			string Text = "Play Again?",
+			uint FontSize = 60,
+			string Text = "",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
 		},
-		RigidBody = 
-		{
-			bool Static = true,
-			bool Asleep = false,
-			bool Kinematic = false,
-			bool RotationLocked = false,
-			bool Mode2D = true,
-			bool AllowSleep = true,
-			bool Inherit2DMode = true,
-			Vec3 Velocity = [0, 0, 0],
-			Vec3 AngularVelocity = [0, 0, 0],
-		},
-		BoxCollider = 
-		{
-			bool Ghost = false,
-			bool SendsMessages = true,
-			bool Seamless = true,
-			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
-			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, 0, 0],
-			Vec3 Size = [1.75, 0.5, 0.5],
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 8,
-		},
-		Named = 
-		{
-			string Name = "Sprite",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [0, 0, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Sprite = 
-		{
-			bool Visible = false,
-			bool VisibilityCulling = true,
-			bool VisibilityEvents = true,
-			bool CastShadows = false,
-			Vec4 Color = [1, 0, 0, 0.999899983],
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "5274db4c2e7c11f9:Circle",
-			bool RenderMask = false,
-			bool FlipX = false,
-			bool FlipY = false,
-			bool AnimationActive = true,
-			float AnimationSpeed = 1,
-			uint StartFrame = 0,
-		},
-		RigidBody = 
-		{
-			bool Static = false,
-			bool Asleep = false,
-			bool Kinematic = false,
-			bool RotationLocked = false,
-			bool Mode2D = true,
-			bool AllowSleep = true,
-			bool Inherit2DMode = true,
-			Vec3 Velocity = [0, 0, 0],
-			Vec3 AngularVelocity = [0, 0, 0],
-		},
-		BoxCollider = 
-		{
-			bool Ghost = false,
-			bool SendsMessages = true,
-			bool Seamless = true,
-			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
-			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, 0, 0],
-			Vec3 Size = [0.5, 0.5, 0.5],
-		},
-		LoseScreen = 
+		Killtext2 = 
 		{
 		},
 	},

@@ -1,0 +1,33 @@
+class LevelCheats : ZilchComponent
+{
+    var Level1 : Level = Level.Find("Level3");
+    var Level2 : Level = Level.Find("Level1");
+    var Level3 : Level = Level.Find("Level2");
+    
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(Zero.Keyboard, Events.KeyUp, this.OnKeyUp);
+    }
+
+    function OnKeyUp(event : KeyboardEvent)
+    {
+        if(event.Key == Keys.One)
+        {
+            this.LoadLevel(this.Level1);
+        }
+        if(event.Key == Keys.Two)
+        {
+            this.LoadLevel(this.Level2);
+        }
+        if(event.Key == Keys.Three)
+        {
+            this.LoadLevel(this.Level3);
+        }
+    }
+    function LoadLevel(level : Level)
+    {
+        var space = this.GameSession.CreateSpace(Archetype.Find("Space"));
+        space.LoadLevel(level);
+        this.Space.Destroy();
+    }
+}

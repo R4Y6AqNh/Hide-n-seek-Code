@@ -1,0 +1,21 @@
+class Killtext2 : ZilchComponent
+{
+    var Timer : Real = 0.0;
+    var CharCount : Integer = 0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Timer += event.Dt;
+        var words = "from my monsters that chase you.";
+        if(this.Timer > 4 && this.CharCount < words.Count)
+        {
+            this.CharCount +=1;
+            var text = words.SubString(0,this.CharCount);
+            this.Owner.SpriteText.Text = text;
+            this.Timer = 3.9;
+        }
+    }
+}

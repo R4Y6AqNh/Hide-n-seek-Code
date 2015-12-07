@@ -1,0 +1,21 @@
+class Killtext : ZilchComponent
+{
+    var Timer : Real = 0.0;
+    var CharCount : Integer = 0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Timer += event.Dt;
+        var words = "Press space to get away,";
+        if(this.Timer > 0.1 && this.CharCount < words.Count)
+        {
+            this.CharCount +=1;
+            var text = words.SubString(0,this.CharCount);
+            this.Owner.SpriteText.Text = text;
+            this.Timer = 0;
+        }
+    }
+}
